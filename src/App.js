@@ -7,6 +7,7 @@ import QueHacemos from './QueHacemos'
 import ComoLoHacemos from './ComoLoHacemos'
 import Repertorio from './Repertorio'
 import Contacto from './Contacto'
+import Calculadora from './Calculadora';
 
 
 function App() {
@@ -14,6 +15,11 @@ function App() {
         <Router>
           <div className="App">
             <Switch>
+            <Route path="/calculadora">
+                <Player/>
+                <Sidebar/>   
+                <Calculadora/>      
+              </Route>
               <Route path="/comolohacemos">
                 <Player/>
                 <Sidebar/>   
