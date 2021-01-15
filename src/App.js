@@ -1,13 +1,13 @@
 import './App.css';
 import React from "react";
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Sidebar from './Sidebar';
-import Player from './Player';
-import QueHacemos from './QueHacemos'
-import ComoLoHacemos from './ComoLoHacemos'
-import Repertorio from './Repertorio'
-import Contacto from './Contacto'
-import Calculadora from './Calculadora';
+import Sidebar from './components/sidebar/Sidebar';
+// import Player from './Player';
+// import QueHacemos from './QueHacemos'
+// import ComoLoHacemos from './ComoLoHacemos'
+// import Repertorio from './Repertorio'
+// import Contacto from './Contacto'
+// import Calculadora from './Calculadora';
 
 
 function App() {
@@ -15,12 +15,12 @@ function App() {
         <Router>
           <div className="App">
             <Switch>
-            <Route path="/calculadora">
-                <Player/>
+            <Route path="/">
+                {/* <Player/> */}
                 <Sidebar/>   
-                <Calculadora/>      
+                {/* <Calculadora/>       */}
               </Route>
-              <Route path="/comolohacemos">
+              {/* <Route path="/comolohacemos">
                 <Player/>
                 <Sidebar/>   
                 <ComoLoHacemos/>      
@@ -39,7 +39,7 @@ function App() {
                 <Player/>
                 <Sidebar/>   
                 <QueHacemos/>      
-              </Route>
+              </Route> */}
             </Switch>
           </div>  
         </Router>
@@ -47,4 +47,13 @@ function App() {
 }
 
 export default App;
+
+
+// components - contacto - (contacto js - contacto css)
+// SASS
+// Material UI - responsive - grid component, hacer las otras vistas
+// fonts
+// arrow function
+// handlechange para - en musicos
+// https://reactjs.org/docs/hooks-reference.html useState - useEffect - useRef
 
